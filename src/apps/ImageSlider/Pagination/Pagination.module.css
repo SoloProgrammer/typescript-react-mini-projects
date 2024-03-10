@@ -1,0 +1,26 @@
+.container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.indicators {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.indicators .indicator {
+    width: 15px;
+    border-radius: 50%;
+    height: 15px;
+    background: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background: deepskyblue;
+}

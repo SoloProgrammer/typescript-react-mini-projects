@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.outer {
+    overflow: hidden;
+    position: relative;
+    border-radius: .3rem;
+    /* border: 1px solid whitesmoke; */
+}
+
+.wrapper {
+    --left: -0;
+    max-width: 700px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    transition: .2s ease-in-out;
+    transform: translateX(calc(var(--left) * 1px));
+    flex-wrap: nowrap;
+}
+
+.wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
